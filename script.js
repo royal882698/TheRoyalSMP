@@ -50,3 +50,31 @@ const footer=document.querySelector("footer p");
 if(footer){
 footer.innerHTML=`© ${new Date().getFullYear()} TheRoyalSMP • All Rights Reserved`;
 }
+// Dynamic copyright year
+const footer = document.querySelector("footer p");
+if (footer) {
+    footer.innerHTML = `© ${new Date().getFullYear()} TheRoyalSMP`;
+}
+
+// 👇 Paste the new server status code HERE
+
+async function updateServerStatus() {
+    try {
+        const response = await fetch("https://api.mcsrvstat.us/bedrock/3/theroyalsmp9.mcsh.io:19132");
+        const data = await response.json();
+
+        if (data.online) {
+            document.getElementById("status").innerHTML = "🟢 Online";
+            document.getElementById("players").innerHTML = data.players ? data.players.online : "0";
+        } else {
+            document.getElementById("status").innerHTML = "🔴 Offline";
+            document.getElementById("players").innerHTML = "0";
+        }
+    } catch (e) {
+        document.getElementById("status").innerHTML = "❓ Error";
+        document.getElementById("players").innerHTML = "-";
+    }
+}
+
+updateServerStatus();
+setInterval(updateServerStatus, 30000);
