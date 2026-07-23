@@ -1,13 +1,208 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TheRoyalSMP</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.85)),
+url("https://images.unsplash.com/photo-1627856013091-fed6e4e30025?w=1600");
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+color:white;
+}
+
+header{
+text-align:center;
+padding:80px 20px;
+}
+
+h1{
+font-size:60px;
+color:#FFD700;
+text-shadow:0 0 20px gold;
+}
+
+.subtitle{
+font-size:22px;
+color:#ddd;
+margin-top:15px;
+}
+
+.status{
+display:inline-block;
+margin-top:20px;
+padding:12px 28px;
+background:#16a34a;
+border-radius:30px;
+font-weight:bold;
+font-size:18px;
+}
+
+.container{
+width:90%;
+max-width:1100px;
+margin:auto;
+padding:40px 0;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:rgba(255,255,255,.08);
+padding:25px;
+border-radius:15px;
+transition:.3s;
+backdrop-filter:blur(10px);
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+color:#FFD700;
+margin-bottom:10px;
+}
+
+.join{
+margin-top:40px;
+background:rgba(255,255,255,.08);
+padding:30px;
+border-radius:15px;
+text-align:center;
+}
+
+.ip{
+font-size:24px;
+color:#00ff99;
+margin:10px 0;
+}
+
+.port{
+font-size:22px;
+color:#87ceeb;
+}
+
+.button{
+display:inline-block;
+margin-top:20px;
+padding:15px 35px;
+background:#FFD700;
+color:black;
+text-decoration:none;
+font-weight:bold;
+border-radius:10px;
+}
+
+.button:hover{
+background:white;
+}
+
+footer{
+margin-top:60px;
+padding:20px;
+text-align:center;
+color:#bbb;
+}
+</style>
 </head>
-<body style="background:#111;color:white;text-align:center;font-family:Arial;">
-<h1>👑 Welcome to TheRoyalSMP</h1>
-<p>Friendly Survival Minecraft Server</p>
-<p>🌍 24/7 Online</p>
-<p>⚡ Smooth Gameplay</p>
-<p>👥 Friendly Community</p>
+
+<body>
+
+<header>
+
+<h1>👑 TheRoyalSMP</h1>
+
+<p class="subtitle">
+The Ultimate Minecraft Survival Experience
+</p>
+
+<div class="status">
+🟢 24/7 ONLINE
+</div>
+
+</header>
+
+<div class="container">
+
+<div class="grid">
+
+<div class="card">
+<h3>🌍 Friendly Survival</h3>
+<p>Play survival with players from around the world.</p>
+</div>
+
+<div class="card">
+<h3>👥 Unlimited Players</h3>
+<p>Invite all your friends and enjoy together.</p>
+</div>
+
+<div class="card">
+<h3>⚡ Smooth Performance</h3>
+<p>Fast and optimized gameplay.</p>
+</div>
+
+<div class="card">
+<h3>🛡 Active Staff</h3>
+<p>Friendly staff always ready to help.</p>
+</div>
+
+<div class="card">
+<h3>🎉 Weekly Events</h3>
+<p>Join exciting PvP and build competitions.</p>
+</div>
+
+<div class="card">
+<h3>🏰 Amazing Spawn</h3>
+<p>Beautiful lobby with an epic royal design.</p>
+</div>
+
+</div>
+
+<div class="join">
+
+<h2>🎮 Join TheRoyalSMP</h2>
+
+<p class="ip">
+🌐 IP: shadowsmp9.mcsh.io
+</p>
+
+<p class="port">
+📱 Port: 19132
+</p>
+
+<p>
+🟢 24/7 Online • 👥 Unlimited Players
+</p>
+
+<a href="#" class="button">
+Join Discord
+</a>
+
+</div>
+
+</div>
+
+<footer>
+
+© 2026 TheRoyalSMP • All Rights Reserved
+
+</footer>
+
 </body>
 </html>
