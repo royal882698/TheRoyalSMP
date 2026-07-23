@@ -1,4 +1,4 @@
-*{
+{
 margin:0;
 padding:0;
 box-sizing:border-box;
@@ -167,3 +167,12 @@ font-size:32px;
 }
 
   }
+#particles-js{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+z-index:-1;
+background:#0b0b0b;
+}
