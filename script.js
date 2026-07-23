@@ -60,7 +60,7 @@ if (footer) {
 
 async function updateServerStatus() {
     try {
-        const response = await fetch("https://api.mcsrvstat.us/bedrock/3/theroyalsmp9.mcsh.io:19132");
+        const response = await fetch("https://api.mcsrvstat.us/bedrock/3/theroyalsmp9.mcsh.io");
         const data = await response.json();
 
         if (data.online) {
