@@ -36,10 +36,13 @@ font-size:30px;
 }
 
 nav ul{
-display:flex;
-list-style:none;
-gap:25px;
-}
+  nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    gap: 15px;
+  }
 
 nav a{
 color:white;
