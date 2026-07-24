@@ -19,8 +19,8 @@ url("https://images.unsplash.com/photo-1627856013091-fed6e4e30025?w=1600") cente
 }
 
 nav{
-display:flex;
-justify-content:space-between;
+justify-content: center;
+flex-wrap: wrap;
 align-items:center;
 padding:20px 8%;
 background:rgba(0,0,0,.45);
